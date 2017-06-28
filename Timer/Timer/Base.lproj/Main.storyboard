@@ -81,10 +81,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLx-kS-NLo">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="184"/>
                                                         <state key="normal" title="Pause"/>
+                                                        <connections>
+                                                            <action selector="pauseButtonTapped:" destination="Zo9-aa-Ual" eventType="touchUpInside" id="05o-fk-Cs9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw4-d9-e29">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="184"/>
                                                         <state key="normal" title="Start"/>
+                                                        <connections>
+                                                            <action selector="startButtonTapped:" destination="Zo9-aa-Ual" eventType="touchUpInside" id="pNj-AS-ymC"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

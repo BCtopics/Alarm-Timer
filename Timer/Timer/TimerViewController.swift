@@ -18,6 +18,10 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         minutesPickerView.delegate = self
         minutesPickerView.dataSource = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTimerBasedViews(_:)), name: .secondTickNotification, object: timer)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(timerComplete(_:)), name: .timerCompleteNotification, object: timer)
     }
     
     //MARK: - PickerViewDelegate and DataSource
@@ -55,10 +59,15 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var pickerStackView: UIStackView!
     
-    
     //MARK: - IBActions
     
+    @IBAction func startButtonTapped(_ sender: Any) {
+        toggleTimer()
+    }
     
+    @IBAction func pauseButtonTapped(_ sender: Any) {
+       timer.togglePause()
+    }
     
     //MARK: Private
     
