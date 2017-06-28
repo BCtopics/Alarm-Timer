@@ -81,6 +81,12 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     @IBAction func pauseButtonTapped(_ sender: Any) {
        timer.togglePause()
+        
+        if timer.isOn {
+            pauseButton.setTitle("Pause", for: .normal)
+        } else {
+            pauseButton.setTitle("Resume", for: .normal)
+        }
     }
     
     //MARK: Private
