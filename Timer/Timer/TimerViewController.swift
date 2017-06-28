@@ -19,6 +19,8 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         minutesPickerView.delegate = self
         minutesPickerView.dataSource = self
         
+        view.layoutIfNeeded()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(updateTimerBasedViews(_:)), name: .secondTickNotification, object: timer)
         
         NotificationCenter.default.addObserver(self, selector: #selector(timerComplete(_:)), name: .timerCompleteNotification, object: timer)

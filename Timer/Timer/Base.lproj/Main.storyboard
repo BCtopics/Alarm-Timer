@@ -30,7 +30,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-Dn-GTL">
                                         <rect key="frame" x="0.0" y="2" width="375" height="184"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJa-W7-87T">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJa-W7-87T">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
                                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="80"/>
                                                 <nil key="textColor"/>
@@ -181,6 +181,9 @@
                                         <state key="normal" title="Set Alarm">
                                             <color key="titleColor" red="0.058823529409999999" green="0.82352941180000006" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="alarmButtonTapped:" destination="vrS-5S-q7w" eventType="touchUpInside" id="4Jq-WA-6qp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -194,6 +197,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Alarm" id="Yh7-Xf-Tnd"/>
+                    <connections>
+                        <outlet property="alarmButton" destination="bjn-Tb-IHl" id="Ipm-OR-W2y"/>
+                        <outlet property="dateLabel" destination="bMn-NR-TTG" id="Cua-BO-Zgx"/>
+                        <outlet property="datePicker" destination="2l6-Aq-jpz" id="mpD-fa-qYC"/>
+                        <outlet property="messageLabel" destination="fmX-Tg-E3h" id="b3n-K9-Akg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7i-CP-oBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
