@@ -12,7 +12,7 @@
         <!--Timer-->
         <scene sceneID="J2x-4d-yr0">
             <objects>
-                <viewController id="Zo9-aa-Ual" sceneMemberID="viewController">
+                <viewController id="Zo9-aa-Ual" customClass="TimerViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H56-DF-ihx"/>
                         <viewControllerLayoutGuide type="bottom" id="cnd-x5-fNs"/>
@@ -113,6 +113,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Timer" id="e2H-Fs-2mQ"/>
+                    <connections>
+                        <outlet property="hoursPickerView" destination="rVd-qj-uSa" id="t6t-PH-FtC"/>
+                        <outlet property="minutesPickerView" destination="kYw-aF-iNI" id="624-BX-rCo"/>
+                        <outlet property="pauseButton" destination="yLx-kS-NLo" id="4pv-LI-861"/>
+                        <outlet property="pickerStackView" destination="ZfD-5e-JIp" id="UAm-UG-4H3"/>
+                        <outlet property="progressView" destination="7Mk-j1-8hZ" id="p0g-et-0oa"/>
+                        <outlet property="startButton" destination="gw4-d9-e29" id="IvE-hr-7vK"/>
+                        <outlet property="timerLabel" destination="yJa-W7-87T" id="6PB-li-8VR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Py-Ek-OXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +130,7 @@
         <!--Alarm-->
         <scene sceneID="mua-hQ-PtO">
             <objects>
-                <viewController id="vrS-5S-q7w" sceneMemberID="viewController">
+                <viewController id="vrS-5S-q7w" customClass="AlarmViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x6e-7M-nm3"/>
                         <viewControllerLayoutGuide type="bottom" id="zIl-Ul-4AM"/>
