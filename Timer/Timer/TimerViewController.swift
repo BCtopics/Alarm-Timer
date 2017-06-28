@@ -9,7 +9,7 @@
 import UIKit
 
 class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,5 +53,5 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var pickerStackView: UIStackView!
     
     //MARK: - IBActions
-
+    
 }
