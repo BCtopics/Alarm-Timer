@@ -48,7 +48,7 @@ class AlarmViewController: UIViewController {
         
         if alarm.isArmed {
             alarm.cancel()
-            switchToAlarmSetView()
+            switchToAlarmNotSetView(nil)
         } else {
             armAlarm()
         }
