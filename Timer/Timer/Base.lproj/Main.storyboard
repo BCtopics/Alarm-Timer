@@ -212,7 +212,7 @@
         <scene sceneID="b3S-bc-8M2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oxQ-Hk-Dzw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timer" id="6Br-A8-pgZ"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="timerIcon" selectedImage="timerIconSelected" id="6Br-A8-pgZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D2t-dE-67o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -249,7 +249,7 @@
         <scene sceneID="icF-IB-aZ5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CUI-Z2-st4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Alarm" id="sWj-fr-ShK"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" image="alarmIcon" selectedImage="alarmIconSelected" id="sWj-fr-ShK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="teB-G5-Ged">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -265,4 +265,10 @@
             <point key="canvasLocation" x="1628" y="673"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alarmIcon" width="28" height="28"/>
+        <image name="alarmIconSelected" width="28" height="28"/>
+        <image name="timerIcon" width="28" height="28"/>
+        <image name="timerIconSelected" width="28" height="28"/>
+    </resources>
 </document>

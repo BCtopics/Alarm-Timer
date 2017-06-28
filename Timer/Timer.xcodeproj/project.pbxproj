@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6B16E3201F04052A004CF936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16E31F1F04052A004CF936 /* AppDelegate.swift */; };
 		6B16E3251F04052A004CF936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B16E3231F04052A004CF936 /* Main.storyboard */; };
-		6B16E3271F04052A004CF936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B16E3261F04052A004CF936 /* Assets.xcassets */; };
 		6B16E32A1F04052A004CF936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B16E3281F04052A004CF936 /* LaunchScreen.storyboard */; };
 		6B16E3351F040C89004CF936 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16E3341F040C89004CF936 /* AlarmViewController.swift */; };
 		6B16E3371F040C92004CF936 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16E3361F040C92004CF936 /* TimerViewController.swift */; };
@@ -17,13 +16,13 @@
 		6B16E33C1F040CF8004CF936 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16E33B1F040CF8004CF936 /* Timer.swift */; };
 		6B16E33E1F04141F004CF936 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16E33D1F04141F004CF936 /* Colors.swift */; };
 		6B16E3411F041483004CF936 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16E3401F041483004CF936 /* AppearanceController.swift */; };
+		6B16E3431F042710004CF936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B16E3421F042710004CF936 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6B16E31C1F04052A004CF936 /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B16E31F1F04052A004CF936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B16E3241F04052A004CF936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6B16E3261F04052A004CF936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B16E3291F04052A004CF936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B16E32B1F04052A004CF936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B16E3341F040C89004CF936 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		6B16E33B1F040CF8004CF936 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		6B16E33D1F04141F004CF936 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		6B16E3401F041483004CF936 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		6B16E3421F042710004CF936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				6B16E3321F040545004CF936 /* Storyboards */,
-				6B16E3261F04052A004CF936 /* Assets.xcassets */,
 				6B16E3281F04052A004CF936 /* LaunchScreen.storyboard */,
 				6B16E32B1F04052A004CF936 /* Info.plist */,
 			);
@@ -88,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				6B16E3231F04052A004CF936 /* Main.storyboard */,
+				6B16E3421F042710004CF936 /* Assets.xcassets */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B16E32A1F04052A004CF936 /* LaunchScreen.storyboard in Resources */,
-				6B16E3271F04052A004CF936 /* Assets.xcassets in Resources */,
+				6B16E3431F042710004CF936 /* Assets.xcassets in Resources */,
 				6B16E3251F04052A004CF936 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
