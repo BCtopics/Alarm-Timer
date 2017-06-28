@@ -19,11 +19,23 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         minutesPickerView.delegate = self
         minutesPickerView.dataSource = self
         
-        view.layoutIfNeeded()
-        
         NotificationCenter.default.addObserver(self, selector: #selector(updateTimerBasedViews(_:)), name: .secondTickNotification, object: timer)
         
         NotificationCenter.default.addObserver(self, selector: #selector(timerComplete(_:)), name: .timerCompleteNotification, object: timer)
+        
+        minutesPickerView.selectRow(1, inComponent: 0, animated: false)
+        
+        view.layoutIfNeeded()
+        
+        pauseButton.layer.cornerRadius = pauseButton.bounds.height / 2
+        pauseButton.layer.masksToBounds = true
+        pauseButton.layer.borderWidth = 2.0
+        pauseButton.layer.borderColor = UIColor.blueTimerColor.cgColor
+        
+        startButton.layer.cornerRadius = startButton.bounds.height / 2
+        startButton.layer.masksToBounds = true
+        startButton.layer.borderWidth = 2.0
+        startButton.layer.borderColor = UIColor.lightBlueTimerColor.cgColor
     }
     
     //MARK: - PickerViewDelegate and DataSource
